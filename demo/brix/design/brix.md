@@ -84,6 +84,7 @@
 
 ###节点的关键特征及映射<a id='b02'></a>
 ####属性
+***
 <select id="ex02">
 	<option value="1">A</option>
 	<option value="2" selected>B</option>
@@ -95,13 +96,14 @@
 		alert(sel.selectedIndex);
 	}
 </script>
+***
 ```
 <select id="ex02">
 	<option value="1">A</option>
 	<option value="2">B</option>
 </select>
 <button onclick="clk02()">selectedIndex</button>
-<scrip>
+<script>
 	function clk02(){
 		var sel = document.getElementById("ex02");
 		alert(sel.selectedIndex);
@@ -109,6 +111,20 @@
 </script>
 ```
 ####方法
+***
+<select id="ex01" abc="123">
+	<option value="1">A</option>
+	<option value="2">B</option>
+</select>
+<button onclick="clk01()">getAttribute("abc")</button>
+<script>
+	function clk01(){
+		var sel = document.getElementById("ex01");
+		alert(sel.getAttribute("abc"));
+	}
+</script>
+***
+`````
 <select id="ex01" abc="123">
 	<option value="1">A</option>
 	<option value="2">B</option>
@@ -121,19 +137,8 @@
 	}
 </script>
 `````
-<select id="ex01" abc="123">
-	<option value="1">A</option>
-	<option value="2">B</option>
-</select>
-<button onclick="clk01()">getAttribute("abc")</button>
-<scrip>
-	function clk01(){
-		var sel = document.getElementById("ex01");
-		alert(sel.getAttribute("abc"));
-	}
-</script>
-`````
 ####事件
+***
 <select id="ex03" onchange="chg01(this)">
 	<option value="1">A</option>
 	<option value="2">B</option>
@@ -143,12 +148,13 @@
 			alert(ts.selectedIndex);
 	}
 </script>
+***
 ```
 <select id="ex03" onchange="chg01(this)">
 	<option value="1">A</option>
 	<option value="2">B</option>
 </select>
-<scrip>
+<script>
 	function chg01(ts){
 			alert(ts.selectedIndex);
 	}
