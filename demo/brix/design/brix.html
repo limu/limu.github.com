@@ -240,6 +240,8 @@ pre code {
 
 <h4>属性</h4>
 
+<hr />
+
 <p><select id="ex02">
     <option value="1">A</option>
     <option value="2" selected>B</option>
@@ -254,20 +256,28 @@ pre code {
 </script>
 
 
-<pre><code>&lt;select id="ex02"&gt;
-    &lt;option value="1"&gt;A&lt;/option&gt;
-    &lt;option value="2"&gt;B&lt;/option&gt;
-&lt;/select&gt;
-&lt;button onclick="clk02()"&gt;selectedIndex&lt;/button&gt;
-&lt;scrip&gt;
+<hr />
+
+<p>```
+<select id="ex02">
+    <option value="1">A</option>
+    <option value="2">B</option>
+</select>
+<button onclick="clk02()">selectedIndex</button></p>
+
+<script>
     function clk02(){
         var sel = document.getElementById("ex02");
         alert(sel.selectedIndex);
     }
-&lt;/script&gt;
-</code></pre>
+</script>
+
+
+<p>```</p>
 
 <h4>方法</h4>
+
+<hr />
 
 <p><select id="ex01" abc="123">
     <option value="1">A</option>
@@ -283,20 +293,28 @@ pre code {
 </script>
 
 
-<pre><code>&lt;select id="ex01" abc="123"&gt;
-    &lt;option value="1"&gt;A&lt;/option&gt;
-    &lt;option value="2"&gt;B&lt;/option&gt;
-&lt;/select&gt;
-&lt;button onclick="clk01()"&gt;getAttribute("abc")&lt;/button&gt;
-&lt;scrip&gt;
+<hr />
+
+<p>`````
+<select id="ex01" abc="123">
+    <option value="1">A</option>
+    <option value="2">B</option>
+</select>
+<button onclick="clk01()">getAttribute(&ldquo;abc&rdquo;)</button></p>
+
+<script>
     function clk01(){
         var sel = document.getElementById("ex01");
         alert(sel.getAttribute("abc"));
     }
-&lt;/script&gt;
-</code></pre>
+</script>
+
+
+<p>`````</p>
 
 <h4>事件</h4>
+
+<hr />
 
 <p><select id="ex03" onchange="chg01(this)">
     <option value="1">A</option>
@@ -310,15 +328,21 @@ pre code {
 </script>
 
 
-<pre><code>&lt;select id="ex03" onchange="chg01(this)"&gt;
-    &lt;option value="1"&gt;A&lt;/option&gt;
-    &lt;option value="2"&gt;B&lt;/option&gt;
-&lt;/select&gt;
-&lt;scrip&gt;
+<hr />
+
+<p>```
+<select id="ex03" onchange="chg01(this)">
+    <option value="1">A</option>
+    <option value="2">B</option>
+</select></p>
+
+<script>
     function chg01(ts){
             alert(ts.selectedIndex);
     }
-&lt;/script&gt;
-</code></pre>
+</script>
+
+
+<p>```</p>
 </body>
 </html>
